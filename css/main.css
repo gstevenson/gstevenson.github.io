@@ -6,7 +6,6 @@ body {
 body, html {
     margin: 0;
     padding: 0;
-    line-height: 1.5;
     width: 100%;
     font-family: 'Didact Gothic', monospace;
 }
@@ -20,6 +19,7 @@ div.about {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 }
 
 div.about h1 {
@@ -41,7 +41,6 @@ img {
     border-radius: 500rem;
 }
 
-
 footer {
     background-color: #181a1b;
     
@@ -55,4 +54,17 @@ footer a {
     font-size: 3em;
     color: #007bff;
     outline-color: currentColor;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    div.about p {
+        font-size: 1em;
+    }
+    div.about {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
