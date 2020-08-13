@@ -4,12 +4,10 @@ body {
     align-items: center;
     display: flex;
     background-color: #171c28;
-    
 }
 
 body.pushable > .pusher {
     background-color: #171c28;
-
 }
 
 .ui.header {
@@ -20,7 +18,7 @@ body.pushable > .pusher {
 }
 
 h1.ui.header {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 p {
@@ -28,45 +26,45 @@ p {
 }
 
 i {
-    font-size: 3rem;
-    margin: 24px;
+    font-size: 1.5rem;
+    margin: 12px;
+}
+
+img.circular {
+    border-radius: 500rem;
+    max-width: 100%;
 }
 
 .content-wrap {
     margin: 0 auto;
+    width: 50%;
 }
 
-/* TABLETS */
-@media screen and (min-width: 768px) {
 
-    body {
-        font-size: 19px;
-    }
-
-    h1 {
-        font-size: 4vw; line-height: 1;
-    }
-    p {
-        font-size: 1.5rem;
-    }
+a {
+    color: #1da1f2
 }
+
+a:hover {
+    color: #1da1e2
+}
+
+a:visited {
+    color: #1da1f2
+}
+
 
 /* DESKTOPS */
-@media screen and (min-width: 1200px) {
-    .content-wrap {
-        width: 50%;
-    }
+@media screen and (min-width: 800px) {
     p {
         font-size: 2.5rem;
     }
-}
-
-/* DESKTOPS HIGH RES */
-@media screen and (min-width: 1600px) {
-    .content-wrap {
-        width: 50%;
+    h1.ui.header {
+        font-size: 3rem;
     }
-    p {
-        font-size: 2.5rem;
+    i {
+        font-size: 3rem;
+        margin: 24px;
     }
+    
 }
