@@ -1,6 +1,10 @@
 body {
     color: rgb(180, 180, 180);
     font-family: 'Didact Gothic', monospace;
+    align-items: center;
+    display: flex;
+    background-color: #171c28;
+    
 }
 
 body.pushable > .pusher {
@@ -20,10 +24,49 @@ h1.ui.header {
 }
 
 p {
-    font-size: 2.5rem;
+    font-size: 1.25rem;
 }
 
 i {
     font-size: 3rem;
     margin: 24px;
+}
+
+.content-wrap {
+    margin: 0 auto;
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) {
+
+    body {
+        font-size: 19px;
+    }
+
+    h1 {
+        font-size: 4vw; line-height: 1;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+/* DESKTOPS */
+@media screen and (min-width: 1200px) {
+    .content-wrap {
+        width: 50%;
+    }
+    p {
+        font-size: 2.5rem;
+    }
+}
+
+/* DESKTOPS HIGH RES */
+@media screen and (min-width: 1600px) {
+    .content-wrap {
+        width: 50%;
+    }
+    p {
+        font-size: 2.5rem;
+    }
 }
